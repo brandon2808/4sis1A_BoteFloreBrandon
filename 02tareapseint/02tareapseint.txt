@@ -1,0 +1,111 @@
+Algoritmo algoritmos
+	Definir l1,l2,l3 Como real
+	
+	
+	
+	Escribir "1.- Mayor y menor";
+	Leer op
+	Segun (op) hacer
+		caso 1:
+			Escribir "meter lado 1:"
+			Leer l1
+			Escribir "meter lado 2:"
+			Leer l2
+			Escribir "meter lado 3:"
+			Leer l3
+			
+			Definir cat1,cat2,hip Como Real
+			Si l1>l2 Entonces
+				cat1<-l2
+				Si l1>l3 Entonces
+					hip<-l1
+					cat2<-l3
+				SiNo
+					hip<-l3
+					cat2<-l1
+				FinSi
+			SiNo
+				cat1<-l1
+				Si l2>l3 Entonces
+					hip<-l2
+					cat2<-l3
+				SiNo
+					hip<-l3
+					cat2<-l2
+				FinSi
+			FinSi
+			
+			// ver si cumple con Pitagoras
+			Si hip^2 = cat1^2 + cat2^2 Entonces
+				Definir area como real
+				area<-(cateto1*cateto2)/2
+				Escribir "El area es: ",area
+			SiNo
+				Escribir "opcion no valida."
+			FinSi
+		Caso 2:
+			Escribir "meter radio: "
+			Leer R
+			Escribir "meter altura: "
+			Leer H
+			A =  pi*pi*R*H + pi*pi*R*R
+			V = pi*radio*radio*altura
+			Escribir "El A del cilindro es: ", area;
+			Escribir "El V del cilindro es:",volumen;
+		caso 3:
+			suma <- 0
+			para i<-1 Hasta 10 Con Paso 1 Hacer
+				suma <- suma+i
+				
+			FinPara
+			Escribir "la sumatoria de numeros es: ",suma
+			
+			
+		
+			
+		caso 4:
+			Definir total,a,b,x,n Como Entero
+			Escribir"mete un numero"
+				leer a,b,c
+				si a > b  y a > c Entonces
+					Escribir "primero mayor", a
+				SiNo
+					si b > a y b > c Entonces
+						Escribir "segundo mayor", b
+					SiNo
+						si c>a y c>b Entonces
+							Escribir "tercero mayor", c
+						SiNo
+						FinSi
+					FinSi
+				FinSi
+				si a < b  y a < c Entonces
+					Escribir "primero menor", a
+				SiNo
+					si b < a y b < c Entonces
+						Escribir "segundo menor", b
+					SiNo
+						si c<a y c<b Entonces
+							Escribir "tercero menor", c
+						SiNo
+						FinSi
+					FinSi
+				FinSi
+				si a = b  o a = c Entonces
+					Escribir "la opcion incorrecta se repite en la primera",a
+				SiNo
+					si b = a o b = c Entonces
+						Escribir "la opcion incorrecta se repite en la segunda",b
+					SiNo
+						si c=a o c=b Entonces
+							Escribir "la opcion incorrecta se repite en la tercera", c
+						SiNo
+						FinSi
+					FinSi
+				FinSi
+			De Otro Modo:
+				Escribir "opcion incorrecta"
+				fin segun
+				
+FinAlgoritmo
+			
